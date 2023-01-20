@@ -113,5 +113,6 @@ footer {
 }
 
 #Contact_list li a {
-  padding: 5px
+  padding: 5px;
+  color:  #06aed5;
 }
