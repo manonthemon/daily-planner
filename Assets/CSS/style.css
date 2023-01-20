@@ -49,8 +49,6 @@ textarea {
   border-top: 1px dashed #000000;
   padding: 24px;
   width: 90px;
-
-
 }
 
 .past {
@@ -76,6 +74,7 @@ textarea {
   border: none;
   color: white;
   padding: 24px;
+  padding-left: 10px;
 }
 
 /* Styles for button icon */
