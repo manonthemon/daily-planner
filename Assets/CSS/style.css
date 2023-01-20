@@ -9,8 +9,9 @@ textarea {
   border: none;
   resize: none;
   color: #000000;
-  border-left: 2px solid black;
-  padding: 17px;
+  border-left: 1.5px solid black;
+  height: 65px;
+  padding: 10px;
 }
 
 .jumbotron {
@@ -68,23 +69,49 @@ textarea {
 }
 
 .saveBtn {
-  border-left: 1px solid black;
-
+  border-left: 1.5px solid black;
   border-top-right-radius: 15px;
   border-bottom-right-radius: 15px;
-
   background-color: #06aed5;
+  border: none;
   color: white;
-  padding: 22px;
+  padding: 24px;
 }
+
+/* Styles for button icon */
 
 .saveBtn i {
   width: 30px;
 }
-
 
 .saveBtn i:hover {
   color: #000000;
 }
 
 
+footer {
+  display: flex;
+  padding: 30px;
+  font-size: small;
+  justify-content: space-between;
+  align-items: center;
+  margin-left: 50px;
+  margin-right: 50px;
+}
+
+#Contact_list {
+  display: flex;
+  align-items: center;
+  justify-items: space-between;
+  list-style-type: none;
+  margin-bottom: 0px;
+
+  }
+
+#Contact_list li {
+  padding: 10px
+}
+
+#Contact_list li a {
+  padding: 5px
+}
