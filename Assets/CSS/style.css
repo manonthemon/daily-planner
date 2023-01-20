@@ -9,8 +9,8 @@ textarea {
   border: none;
   resize: none;
   color: #000000;
-  border-left: 1px solid black;
-  padding: 12px;
+  border-left: 2px solid black;
+  padding: 17px;
 }
 
 .jumbotron {
@@ -32,7 +32,7 @@ textarea {
   display: flex;
   justify-content: space-between;
   align-items: center;
-  margin: 2px
+  margin: 1px
 
 }
 
@@ -46,7 +46,7 @@ textarea {
   background-color: #ffffff;
   color: #000000;
   border-top: 1px dashed #000000;
-  padding: 23px;
+  padding: 24px;
   width: 90px;
 
 

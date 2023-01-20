@@ -1,2 +1,2 @@
-var currentDate = moment().format('MMMM Do YYYY');
+var currentDate = moment().format(' dddd, MMMM Do');
 document.getElementById("currentDay").innerHTML = currentDate;
