@@ -1,3 +1,6 @@
+$(function () {
+
+
 // Script displaying current date in the Jumbotron
 var currentDate = moment().format(' dddd, MMMM Do YYYY');
 document.getElementById("currentDay").innerHTML = currentDate;
@@ -14,37 +17,43 @@ if (currentTime24 >= 12) {
     whatTime = "AM";
 }
 
-var currentTime12 = currentTime24 % 12 + whatTime
+var currentTime12 = "9AM"
+
+// currentTime24 % 12 + whatTime
+
+
+// TODO Add if statement changing colors of tabs depending on current time
+
+var timeBlock = $(".time-block") //Reference time blocks in html
 
 
 
-var timeBlock = $(".time-block")
+// There add different colors to timeBlocks depending on the time
 
-console.log(timeBlock)
+//!Problem with comparing AM and PM times. 
 
+timeBlock.filter(function() {
+    return parseInt($(this).find(".hour").text()) === parseInt(currentTime12);
+}).find("textarea").addClass("present");
 
-var container = $(".container")
+timeBlock.filter(function() {
+    return parseInt($(this).find(".hour").text()) < parseInt(currentTime12);
+}).find("textarea").addClass("past");
 
-console.log(container)
+timeBlock.filter(function() {
+    return parseInt($(this).find(".hour").text()) > parseInt(currentTime12);
+}).find("textarea").addClass("future");
 
-for (i=0; i<9; i++) {
-
-
-}
-
-
-
-
-var hour = timeBlock.find('.hour');
-
-var textContent = hour.text();
-
-console.log(textContent); //
 
 
 // TODO Add event listeners to the buttons saving entries to local storage
-// TODO Add if statement changing colors of tabs depending on current time
+
+$(".saveBtn").on("click", function () {})
+
 
 // TODO Consider adding button to clear previous entry.
 
 
+
+
+});
