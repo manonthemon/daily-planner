@@ -3,10 +3,10 @@
 
 $(function () {
 
-
     // Script displaying current date in the Jumbotron
     var currentDate = moment().format(' dddd, MMMM Do YYYY');
     document.getElementById("currentDay").innerHTML = currentDate;
+});
 
     // Var containing the current hour in 24 h format
     var currentTime = new Date().getHours();
@@ -35,7 +35,27 @@ $(function () {
         var entryValue = $(this).prev("textarea").val();
         var entryId = $(this).prev("textarea").attr("id");
         localStorage.setItem(entryId, entryValue);
+
+        // This part of code creates a delete button for each text-area. I commented it out as it wasn't part of the requirements
+        //but it can be uncommented and used as needed. 
+        // It first check if a deleted button already exists.
+        // If not, it creates it and adds a class to it. I defined this class in the CSS file.
+        // It then inserts it before the existing save button with an animation. 
+
+            if($(this).prev(".deleteBtn").length == 0){
+                var newBtn = $("<button>").addClass("deleteBtn").text("Delete");
+                $(newBtn).animate({width: "100px"}, {duration: 150 } ).insertBefore(this)
+             }
+
+        });
+
+        $(document).on("click", ".deleteBtn", function () {
+        $(this).prev("textarea").val("");
+        var entryId = $(this).prev("textarea").attr("id");
+        localStorage.removeItem(entryId);
+        $(this).remove();
     });
+  
 
     // This retrieves information form local storage on page load and sets it in appropriate cells.
     // First it loops through each textarea, gets their id attributes and assigns it to entryId variable
@@ -56,8 +76,6 @@ $(function () {
         localStorage.clear();
         location.reload()
     });
-
-})
 
     // Code converting current time to 12h format. I ended up not using it but kept it here just in case.
     // var whatTime;

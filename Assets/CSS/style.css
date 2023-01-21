@@ -87,6 +87,18 @@ textarea {
   color: #000000;
 }
 
+/* Delete button styles */
+
+.deleteBtn {
+  background-color: #d5061b;
+  border: none;
+  color: white;
+  padding: 24px;
+  padding-left: 10px;
+}
+
+
+
 
 footer {
   display: flex;
