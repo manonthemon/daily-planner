@@ -25,7 +25,9 @@ var currentTime= new Date().getHours();
 // There add different colors to timeBlocks depending on the time
 //Firs it selects all "textarea" elements
 //Then it filters out all those with ID whose value is > < or == to current time 
-//And it applies different classes to them accordingly.
+//And it applies different classes to them accordingly
+
+
 $("textarea").filter(function() {
     return parseInt(this.id) < currentTime;
 }).addClass("past");
