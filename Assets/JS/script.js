@@ -47,7 +47,7 @@ $(function () {
         // It then inserts the new button before the existing save button with an animation.
              if($(this).prev(".deleteBtn").length == 0 && entryValue) {
                 var newBtn = $("<button>").addClass("deleteBtn").text("Delete");
-                $(newBtn).animate({width: "100px"}, {duration: 150 } ).insertBefore(this)
+                $(newBtn).animate({width: "75px"}, {duration: 150 } ).insertBefore(this)
              }
         });
 
@@ -82,6 +82,7 @@ $(function () {
 // This adds a Clear All button at the top of the page. 
 
     $("#clear").on("click", function () {
+
         localStorage.clear();
         location.reload()
     });

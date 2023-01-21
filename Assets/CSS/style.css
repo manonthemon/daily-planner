@@ -53,16 +53,16 @@ textarea {
 
 .past {
   background-color: #d3d3d3;
-  color: white;
+  color: rgb(0, 0, 0);
 }
 
 .present {
-  background-color: #ff6961;
+  background-color: #ff9100;
   color: white;
 }
 
 .future {
-  background-color: #77dd77;
+  background-color: #5dae5d;
   color: white;
 }
 
@@ -83,9 +83,10 @@ textarea {
   width: 30px;
 }
 
-.saveBtn i:hover {
-  color: #000000;
+.saveBtn:hover{
+  background-color: #066b81;
 }
+
 
 /* Delete button styles */
 
@@ -95,8 +96,12 @@ textarea {
   color: white;
   padding: 24px;
   padding-left: 10px;
+  padding-right: 10px;
 }
 
+.deleteBtn:hover {
+  background-color:#850713;
+}
 
 #clear {
   background-color: #d5061b;
@@ -105,11 +110,13 @@ textarea {
   padding: 10px;
   border-radius: 10px;
   margin-top: 30px;
-  
 }
 
+#clear:hover {
+  background-color:#850713;
+}
 
-
+/* Footer styles */
 
 footer {
   display: flex;
