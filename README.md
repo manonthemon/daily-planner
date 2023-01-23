@@ -28,7 +28,7 @@ I've included all of the above in my app. Furthermore, I coded in the following 
 
  The following gif presents the desired look of the deployed webapp:
 
-![Animation of the daily planner web-app](./assets/images/daily-planner-demo.gif)
+![Animation of the daily-planner app](./assets/images/daily-planner-demo.gif)
 
 Creating the daily planner app allowed me to:
 
@@ -44,7 +44,6 @@ Creating the daily planner app allowed me to:
 ## Installation
 
 No installation is required. The deployed planner can be seen at https://manonthemon.github.io/daily-planner/. All project files are available in the repository. <br>
-
 
 ## Usage
 
