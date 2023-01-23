@@ -1,4 +1,4 @@
-# DailyPlanner
+# Daily Planner
 ![jQuery](https://img.shields.io/badge/jquery-%230769AD.svg?style=for-the-badge&logo=jquery&logoColor=white)![JavaScript](https://img.shields.io/badge/JavaScript-323330?style=for-the-badge&logo=javascript&logoColor=F7DF1E)
 ![HTML](https://img.shields.io/badge/HTML5-E34F26?style=for-the-badge&logo=html5&logoColor=white) ![CSS](https://img.shields.io/badge/CSS3-1572B6?style=for-the-badge&logo=css3&logoColor=white)
 
@@ -26,9 +26,9 @@ I've included all of the above in my app. Furthermore, I coded in the following 
 
 <li>A footer with copyright information and links.</li><br>
 
- The following gif presents the desired look of the deployed webapp:
+ The following screenshot presents the final look of the deployed webapp:
 
-![Animation of the daily-planner app](./assets/images/daily-planner-demo.gif)
+![Screenshot of the daily-planner app](./assets/images/daily-planner.jpg)
 
 Creating the daily planner app allowed me to:
 
