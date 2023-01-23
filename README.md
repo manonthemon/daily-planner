@@ -28,7 +28,7 @@ I've included all of the above in my app. Furthermore, I coded in the following 
 
  The following screenshot presents the final look of the deployed webapp:
 
-![Screenshot of the daily-planner app](./assets/images/daily-planner.jpg)
+![Screenshot of the daily-planner app](https://github.com/manonthemon/daily-planner/blob/main/Assets/images/daily-planner.jpg)
 
 Creating the daily planner app allowed me to:
 
